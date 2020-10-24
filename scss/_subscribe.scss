@@ -1,0 +1,64 @@
+.subscribe {
+	background-image: url("../img/subscribe__bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 147px 0px 153px 0px;
+	&__column {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+	}
+
+	&__subtitle {
+		margin: 10px auto 0px auto;
+	}
+}
+form.subscribe__submit-form {
+	margin: 40px auto 0px auto;
+	width: 826px;
+}
+@media screen and (max-width: $lg) {
+	form.subscribe__submit-form {
+		width: 80%;
+	}
+}
+div.subscribe-submit-form__input {
+	background-color: $white;
+	height: 100%;
+	flex-basis: 80%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0px 0px 0px 20px;
+}
+div.subscribe-submit-form__input input {
+	border: none;
+	height: 100%;
+	width: 50%;
+}
+@media screen and (max-width: $sm) {
+	div.subscribe-submit-form__input input {
+		padding: 0px;
+		width: 100%;
+	}
+}
+@media screen and (max-width: $sm) {
+	div.subscribe-submit-form__input input::placeholder {
+		font-size: 12px;
+		padding: 0px;
+	}
+}
+
+.fa-envelope-open-text {
+	color: #d9d9d9;
+	font-size: 25px;
+}
+@media screen and (max-width: $sm) {
+	.fa-envelope-open-text {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,24 @@
+@import "_reset";
+@import "_variables";
+@import "_header";
+@import "_footer";
+@import "_fonts";
+@import "_key-features";
+@import "_sell-in-3-steps";
+@import "_benefits";
+@import "_subscribe";
+@import "_contact-us";
+
+body {
+	font-family: $main;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	max-width: 1180px;
+	margin: 0px auto;
+}

@@ -1,0 +1,119 @@
+.benefits {
+	padding: 100px 0px 0px 0px;
+	&__body {
+		padding: 100px 0px 340px 0px;
+	}
+	&__row {
+		display: flex;
+		flex-direction: row;
+		margin: 0 -5px;
+		padding: 20px;
+	}
+	@media screen and (max-width: $lg) {
+		&__row {
+			padding: 10px;
+		}
+	}
+	@media screen and (max-width: $md) {
+		&__row {
+			flex-direction: column;
+		}
+	}
+
+	&__column {
+		padding: 0 5px;
+		flex: 0 1 33.333%;
+	}
+
+	&__list {
+	}
+	@media screen and (max-width: $md) {
+		&__list {
+			margin: 10px;
+		}
+	}
+	&__item {
+		color: $white;
+		font-size: 16px;
+		font-weight: 400;
+		text-align-last: left;
+		height: 20px;
+		background-color: $orange;
+		padding: 25px 20px;
+		border: 1px solid $white;
+	}
+	@media screen and (max-width: $lg) {
+		&__item {
+			font-size: 14px;
+		}
+	}
+
+	&__video {
+		max-width: 912px;
+		height: 467px;
+		padding: 0px 20px 0px 20px;
+		margin: -450px auto 0px auto;
+	}
+	&__video video {
+		max-width: 828px;
+		height: auto;
+		background-color: $white;
+		position: relative;
+	}
+
+	@media screen and (max-width: $lg) {
+		&__video video {
+			width: 80%;
+			height: auto;
+			margin: 0px auto;
+		}
+	}
+}
+.video-controls {
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	cursor: pointer;
+	background-color: #fff;
+	border: 1px solid #000;
+}
+
+#play-btn {
+	left: 5px;
+}
+
+#pause-btn {
+	left: 5px;
+}
+
+#mute-btn {
+	left: 60px;
+}
+
+#unmute-btn {
+	left: 60px;
+}
+
+#stop-btn {
+	left: 115px;
+}
+
+#replay-btn {
+	left: 115px;
+}
+p.item-title {
+	color: $white;
+	font-size: 22px;
+	font-weight: 700;
+}
+p.item-checked {
+	padding-left: 45px;
+	position: relative;
+}
+
+p.item-checked::before {
+	content: url("../img/icons/benefits__icon-checked.png");
+	position: absolute;
+	left: 3%;
+	top: 30%;
+}
